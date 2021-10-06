@@ -1,0 +1,33 @@
+.SmallImage_container{
+    width: 100%;
+    height: 100%;
+    margin-top: .7rem;
+    overflow: hidden;
+}
+.SmallImage_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.smallimage_data{
+    height: 5.5rem;
+    width: 5.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: .5rem;
+    background-color: #FFFFFF;
+    border-radius: .5rem;
+    margin: .2rem;
+}
+.smallimage_data_img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+@media (max-width:1024px) {
+    .SmallImage_cont{
+        flex-direction: row;
+    }
+}

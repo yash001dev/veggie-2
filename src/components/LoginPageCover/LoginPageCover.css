@@ -1,0 +1,12 @@
+.LoginPageCover_container{
+    height: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.loginpage_cover_img{
+    height: 30rem;
+    width: 30rem;
+}

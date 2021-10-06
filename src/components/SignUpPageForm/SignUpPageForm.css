@@ -1,0 +1,70 @@
+.signupform_container {
+  background-color: #fff;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 24%);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 1rem;
+  width: 80%;
+  border-radius: .5rem;
+}
+.signupform_field {
+  display: flex;
+  width: 95%;
+}
+.sec1 {
+  flex-basis: 50%;
+  margin-bottom: 0.5rem;
+}
+.sec2 {
+  flex-basis: 50%;
+  margin-left: 7%;
+}
+.Signupform_input {
+  padding: .4rem .5rem;
+  width: 100%;
+  font-size: 1.1rem;
+  border: 0;
+  box-shadow: 0 1px 9px 0 rgb(159 159 159 / 25%), 0 1px 20px 0 rgb(255 255 255 / 0%);
+  border-radius: 7px;
+  margin-top: 11px;
+}
+.signupform_input_btn {
+  padding: 0.5rem 0.4rem;
+  width: 99%;
+  background-color: #4ac85d;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: none;
+  margin-top: 0.5rem;
+}
+
+.signupform_input_btn:hover {
+  background-color: #3eab4e;
+}
+
+.signupform_external_btn {
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  width: 96%;
+  color: #4ac85d;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #4ac85d;
+  cursor: pointer;
+}
+@media (max-width: 720px) {
+  .signupform_container {
+    margin-top: 5rem;
+    width: 85%;
+  }
+  .signupform_field {
+    flex-direction: column;
+  }
+  .sec2 {
+    margin: 0;
+  }
+}

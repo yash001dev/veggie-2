@@ -1,0 +1,139 @@
+.choose-address > [type="radio"]:checked,
+.choose-address > [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.choose-address > [type="radio"]:checked + label,
+.choose-address > [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+
+.choose-address > [type="radio"]:checked + label:before,
+.choose-address > [type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.choose-address > [type="radio"]:checked + label:after,
+.choose-address > [type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #4ac85d;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.choose-address > [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.choose-address > [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.sub-sec > input[type="text"]:focus {
+  outline: none;
+  border: 2px solid #4ac85d;
+}
+
+.last-sub-sec > textarea[type="text"]:focus {
+  outline: none;
+  border: 2px solid #4ac85d;
+}
+
+.shipping-container {
+  width: 50vw;
+}
+
+.first-sec {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.second-sec {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sub-sec {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0 2rem;
+  margin: 0.7rem 0;
+}
+
+.sub-sec > input {
+  padding: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.last-sub-sec {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0 2rem;
+  margin: 0.7rem 0;
+}
+
+.last-sub-sec > textarea {
+  padding: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.choose-address {
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+
+.continue-shipping-btn {
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+
+.continue-shipping-btn > button {
+  background-color: #4ac85d;
+  padding: 0.6rem;
+  /* width: 96%; */
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .shipping-container {
+    width: 90vw;
+  }
+
+  .first-sec {
+    flex-direction: column;
+  }
+
+  .second-sec {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,33 @@
+.LargeImage_container {
+  width: 100%;
+  height: 100%;
+  margin-top: 0.7rem;
+}
+.largeimage-data {
+  background-color: #ffffff;
+  /* background-color: #f1f3f6; */
+
+  width: 98%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+  border-radius: 0.5rem;
+}
+.largeimage_image {
+  width: 40rem;
+  height: 34rem;
+  object-fit: fill;
+}
+@media (max-width: 1024px) {
+  .largeimage-data {
+    height: 100%;
+    width: 100%;
+  }
+  .largeimage_image {
+    width: 90%;
+    height: 100%;
+  }
+}

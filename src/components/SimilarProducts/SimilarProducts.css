@@ -1,0 +1,32 @@
+.SimilarProducts_container {
+  margin: 2rem 2rem 0 2rem;
+  height: 24rem;
+  overflow: hidden;
+}
+.SimilarProducts_card_con {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin: 1.5rem 0 0 0.5rem;
+}
+.similarproduct_title{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+@media (max-width: 720px) {
+  .SimilarProducts_container {
+    margin: 2rem 2rem 0 1rem;
+  }
+  .SimilarProducts_card_con {
+    overflow: scroll;
+  }
+}

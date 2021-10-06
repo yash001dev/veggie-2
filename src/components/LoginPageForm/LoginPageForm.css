@@ -1,0 +1,103 @@
+.LoginPageForm_container {
+  width: 100%;
+  height: 100%;
+}
+.common_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginform_container {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 1.5rem;
+  width: 50%;
+  border-radius: 0.5rem;
+}
+.loginfrom_title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4ac85d;
+  margin-bottom: 1rem;
+}
+.login_form_fields {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.form_label {
+  font-weight: 500;
+  margin-bottom: .1rem;
+  color: #7d7d7d;
+}
+.loginform_input {
+  padding: 0.4rem 0.5rem;
+  width: 90%;
+  margin-top: 0.3rem;
+  font-size: 1.1rem;
+}
+.login_form_fields input:focus {
+  outline: 2px solid #4ac85d;
+  border: none;
+}
+.login_form_fields input::placeholder {
+  font-size: 0.8rem;
+}
+.remember_me_field input[type="checkbox"] {
+  outline: none;
+  border: none;
+}
+.loginform_input_btn {
+  padding: 0.5rem 0.4rem;
+  width: 96%;
+  background-color: #4ac85d;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: none;
+}
+
+.loginform_input_btn:hover {
+  background-color: #3eab4e;
+}
+
+input[type="submit"]:focus {
+  border: none;
+  outline: none;
+}
+.login_form_fields_extra {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+.loginform_or_label {
+  font-weight: 500;
+  color: gray;
+}
+.loginform_external_btn {
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  width: 92.5%;
+  color: #4ac85d;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #4ac85d;
+  cursor: pointer;
+}
+
+.error_msg {
+  color: red;
+}
+@media (max-width: 720px) {
+  .LoginPageForm_container {
+    margin-top: 1rem;
+  }
+  .loginform_container {
+    width: 85%;
+  }
+}

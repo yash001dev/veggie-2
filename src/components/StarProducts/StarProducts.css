@@ -1,0 +1,238 @@
+.starproducts_container {
+  margin: 6rem 2rem;
+  height: 22.5rem;
+}
+.soldoutlab {
+  position: relative;
+}
+.soldOutLabel {
+  position: absolute;
+  z-index: 100;
+  background-color: rgb(248, 54, 54);
+  width: 9rem;
+  top: -370%;
+  padding: 0.8rem 1rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: white;
+  opacity: 0.8;
+  border-radius: 0.5rem;
+}
+
+.starproducts_head_title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.starproducts_head_dic {
+  color: #4ac85d;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.starproducts_line {
+  height: 0.2rem;
+  background-image: linear-gradient(
+    to right bottom,
+    #a8eb12,
+    #8fe331,
+    #77db44,
+    #60d152,
+    #4ac85d
+  );
+  width: 3rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.5s ease;
+}
+.starproducts_container:hover .starproducts_line {
+  width: 5rem;
+}
+.starproducts_card_con {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  /* overflow: scroll; */
+  margin-left: 0.5rem;
+}
+.starproduct_card {
+  width: 14rem;
+  height: 18.4rem;
+  background-color: #ffff;
+  background-color: #f1f3f6;
+  margin-left: 0.5rem;
+  border-radius: 0.4rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  flex-shrink: 0;
+}
+.starproduct_color_card {
+  flex-shrink: 0;
+  width: 14rem;
+  height: 16.4rem;
+  opacity: 0.9;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  color: #fff;
+}
+.starproduct_color_card_color_two {
+  background-image: linear-gradient(
+    to right bottom,
+    #a8eb12,
+    #8fe331,
+    #77db44,
+    #60d152,
+    #4ac85d
+  );
+}
+.starproduct_color_card_color_one {
+  background-image: linear-gradient(
+    to right bottom,
+    #4ac85d,
+    #60d152,
+    #77db44,
+    #8fe331,
+    #a8eb12
+  );
+}
+.starproduct_color_card_title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+.starproduct_high {
+  color: rgb(221, 105, 62);
+  font-size: 0.8rem;
+  font-weight: 500;
+  overflow: hidden;
+}
+.starproduct_color_card_subt {
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+.starproduct_color_card_btn {
+  background-color: #fff;
+  color: #4ac85d;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.starproduct_color_card_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(74, 200, 93, 1),
+    transparent
+  );
+  transition: all 650ms;
+}
+.starproduct_color_card_btn:hover::before {
+  left: 100%;
+}
+.starproduct_img {
+  width: 100%;
+  overflow: hidden;
+}
+.starproduct_img_data {
+  width: 100%;
+  height: 9rem;
+  object-fit: contain;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+  margin-top: 1rem;
+}
+.starproduct_dis_label {
+  font-size: 0.8rem;
+  border: 0.4px solid #4ac85d;
+  color: #4ac85d;
+  background-color: #dafadf;
+  border-radius: 45%;
+  padding: 0.1rem 0.3rem;
+  display: inline-block;
+  position: relative;
+  bottom: 1rem;
+  left: 0.3rem;
+}
+.starproduct_card:hover .starproduct_img_data {
+  transform: scale(1.1);
+}
+.starproduct_data {
+  padding: 0.5rem 0.5rem 0.5rem 1.3rem;
+}
+.starproduct_title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.starproduct_price {
+  font-weight: 500;
+  font-size: 0.9rem;
+  overflow: hidden;
+}
+.starproduct_price_delete {
+  font-size: 0.8rem;
+  color: grey;
+  overflow: hidden;
+}
+.starproduct_btn_con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.3rem;
+  position: relative;
+}
+.starproduct_btn {
+  background-image: linear-gradient(
+    to right bottom,
+    #4ac85d,
+    #60d152,
+    #77db44,
+    #8fe331,
+    #a8eb12
+  );
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  color: #fff;
+  cursor: pointer;
+}
+.link_class {
+  color: black;
+}
+@media (max-width: 1024px) {
+  .starproducts_container {
+    margin: 5rem 2rem;
+    height: 21.5rem;
+  }
+  .starproducts_card_con {
+    overflow: scroll;
+  }
+}
+@media (max-width:720px) {
+  .soldOutLabel{
+    width: 83%;
+  }
+}

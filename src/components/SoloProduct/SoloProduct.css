@@ -1,0 +1,168 @@
+.soloproduct_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+  background-color: #f1f3f6;
+  background-color: white;
+}
+.solo_sec1 {
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+}
+.solo_sec2 {
+  background-color: #ffffff;
+  margin-top: 2rem;
+}
+.small_img {
+  flex-basis: 15%;
+  width: 100%;
+  height: 100%;
+}
+.large_img {
+  flex-basis: 70%;
+  width: 100%;
+  height: 100%;
+}
+.soloproduct_info {
+  flex-basis: 30%;
+  padding-left: 1rem;
+}
+.soloproduct_name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.soloproduct_common_font {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.soloproduct_price_original {
+  color: gray;
+}
+.soloproduct_price {
+  font-weight: 500;
+}
+.original_pri {
+  color: rgb(223, 96, 96);
+}
+.soloproduct_iteam_varients {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -0.8rem;
+}
+.soloproduct_btns_con {
+  display: flex;
+  flex-direction: column;
+}
+.soloproduct_Buy_btn_con {
+  margin-top: 1.5rem;
+  display: flex;
+}
+.soloproduct_Buy_btn {
+  background-color: #4ac85d;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.less_padding {
+  margin-top: 1rem;
+}
+.soloproduct_service {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.soloproduct_service_title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.soloproduct_line {
+  height: 0.2rem;
+  background-color: #4ac85d;
+  width: 3rem;
+  margin: 0.1rem 0 1rem 0;
+}
+.soloproduct_service_icons {
+  display: flex;
+  border-radius: 0.5rem;
+  margin: 0 2rem 0 0;
+}
+.soloproduct_service_icon {
+  padding: 1rem;
+  background-color: #f1f3f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  min-width: 7rem;
+}
+.extra_border_left {
+  border-bottom-left-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+  border-right: 1px solid lightgray;
+}
+.extra_border_right {
+  border-bottom-right-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  border-left: 1px solid lightgray;
+}
+.soloproduct_high_text {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.soloproduct_high_text_nor {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.soloproduct_high_text_extra {
+  color: #4ac85d;
+}
+
+@media (max-width: 1024px) {
+  .solo_sec1 {
+    flex-direction: column;
+  }
+  .soloproduct_service_icons {
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    min-width: none;
+  }
+  .soloproduct_service_icon {
+    padding: 0.5rem 0rem;
+  }
+  .soloproduct_btns_con {
+    flex-direction: row;
+    gap: 1rem;
+    margin-right: 2rem;
+  }
+  .soloproduct_Buy_btn {
+    padding: 0.5rem 0;
+  }
+}
+@media (max-width:720px) {
+  .soloproduct_high_text {
+    font-size: 0.7rem;
+  }
+  .soloproduct_high_text_nor {
+    font-size: 0.7rem;
+  }
+  .extra_border_right {
+    border-bottom-right-radius: 0rem;
+    border-top-right-radius: 0rem;
+  }
+}

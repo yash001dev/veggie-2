@@ -1,0 +1,156 @@
+.MyOrders_container {
+  margin: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.product_prders {
+  flex-basis: 60%;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+.starproducts_head_title_phone {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cab_orders_phone {
+  display: none;
+}
+.pill_class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  width: 85vw;
+}
+.pill_class_active {
+  background-color: #4ac85d;
+  color: #fff;
+}
+.pill_class_active_left {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border: 1px solid #4ac85d;
+  padding: 0.8rem 1rem;
+}
+.pill_class_active_right {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border: 1px solid #4ac85d;
+  padding: 0.8rem 1rem;
+}
+.pill_class_my {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+.cab_orders {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.myorder_card {
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  width: 95%;
+}
+.myorder_card_body_con {
+  margin-top: 1.5rem;
+}
+.myorder_card_head {
+  display: flex;
+  justify-content: space-between;
+}
+.myorder_id {
+  color: grey;
+  margin-bottom: 0.6rem;
+}
+.myorder_add {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow: hidden;
+  justify-content: flex-end;
+  width: fit-content;
+}
+.myorder_delivery_add {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.myorder_delivery_add_data {
+  font-weight: 400;
+  color: grey;
+  font-weight: 500;
+
+  padding-right: 1rem;
+}
+.myorder_card_body {
+  display: flex;
+  gap: 2rem;
+}
+.myorder_card_body_img {
+  height: 8rem;
+  width: 8rem;
+}
+.myorder_card_body_title {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+.myorder_delivery_footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.myorder_cancel_btn {
+  margin-top: 1rem;
+  background-color: rgb(245, 94, 94);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  color: white;
+  width: 5rem;
+  left: 40%;
+  position: relative;
+}
+@media (max-width: 720px) {
+  .MyOrders_container {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .myorder_card_head {
+    flex-direction: column;
+  }
+  .myorder_card {
+    width: 80%;
+  }
+  .myorder_add {
+    flex-direction: column;
+    gap: 0;
+  }
+  .product_prders {
+    align-items: center;
+  }
+  .cab_orders {
+    justify-content: center;
+    align-items: center;
+  }
+}

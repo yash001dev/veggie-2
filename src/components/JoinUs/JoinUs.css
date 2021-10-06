@@ -1,0 +1,57 @@
+.joinus_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.joinus_msg {
+  flex-basis: 40%;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+}
+.joinus_box_con {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.joinus_box_con input {
+  outline: none;
+  border: none;
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+  height: 2.5rem;
+  width: 50%;
+  padding: 0 0.5rem;
+}
+.joinus_box_btn {
+  height: 2.5rem;
+  font-weight: 500;
+  background-color: #191919;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+
+@media (max-width: 539px) {
+  .joinus_container {
+    flex-direction: column;
+  }
+  .joinus_box_con input {
+    width: 100%;
+  }
+  .joinus_msg {
+    padding: 1rem 0 0.5rem 0;
+  }
+  .joinus_box_con {
+    margin-bottom: 1.5rem;
+  }
+}
