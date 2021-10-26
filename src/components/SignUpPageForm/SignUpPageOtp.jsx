@@ -23,7 +23,6 @@ function SignUpPageOtp(props) {
   let history = useHistory();
   const dispatch = useDispatch();
 
-  console.log("history:", history);
   if (!history.location?.state?.otpToken) {
     history.push("/login");
   }
@@ -49,7 +48,6 @@ function SignUpPageOtp(props) {
   };
 
   const handleResend = () => {
-    console.log("Handle Resend");
     dispatch(againOtp(history.location?.state?.tempToken, history));
   };
 

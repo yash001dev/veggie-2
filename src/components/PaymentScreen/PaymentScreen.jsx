@@ -103,7 +103,7 @@ const PaymentScreen = ({ getBasket }) => {
 
           setTimeout(() => {
             var options = {
-              key: "rzp_test_mCQYP1VXS2KYbo",
+              key: "rzp_live_3z5slrtCRZ0xWX",
               amount: Number(totalPrice) * 100,
               currency: "INR",
               name: "Veggie",

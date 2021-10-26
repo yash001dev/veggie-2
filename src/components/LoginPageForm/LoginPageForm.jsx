@@ -72,7 +72,6 @@ function LoginPageForm(props) {
                   pattern: /^[0-9\b]+$/,
                 })}
               />
-              {console.log(errors)}
               <span className="error_msg">{errors.PhoneNumber?.message}</span>
             </div>
             <div className="login_form_fields">

@@ -41,7 +41,7 @@ export const addToCart = (
         },
       });
     } else {
-      // window.location = "https://veggi365.com/login";
+      window.location = "https://veggi365.com/";
     }
   };
 };

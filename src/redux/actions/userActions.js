@@ -26,7 +26,6 @@ export const userLogin = (phone, password, history) => async (dispatch) => {
       password: password,
     });
     const { data: requiredInfo } = res;
-    console.log("TOKEN:", res);
     if (res?.data?.varification === false) {
       history.push({
         pathname: "/verify-otp",
@@ -81,7 +80,6 @@ export const userLogout = () => (dispatch) => {
 export const userRegister =
   (name, mobile, email, password, history) => async (dispatch) => {
     dispatch({ type: USER_REGISTRATION_LOADING });
-    debugger;
     try {
       const apiData = await axios.post("https://admin.veggi365.com/api/user", {
         user_name: name,
@@ -90,7 +88,6 @@ export const userRegister =
         user_password: password,
       });
 
-      console.log("DATA:", apiData);
       if (apiData?.data?.status === "success") {
         history.push({
           pathname: "/verify-otp",
@@ -121,7 +118,6 @@ export const userRegister =
       });
 
       const { data } = await authAxios.get("/user");
-
       localStorage.setItem("loggedUser", JSON.stringify(data));
       localStorage.setItem("userToken", JSON.stringify(token));
 
@@ -233,6 +229,7 @@ export const otpVerification =
           type: USER_LOGIN_SUCCESSFUL,
           payload: JSON.stringify(data),
         });
+        history.push("/");
         //dispatch({ type: USER_LOGIN_SUCCESSFUL, payload: data });
       }
     } catch (error) {

@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useDispatch, useSelector } from "react-redux";
@@ -17,9 +17,7 @@ function UpdateForm(props) {
     LastName: yup.string().max(10),
     Email: yup.string().email(),
     Contactno: yup.string().matches(Contactno, "Contact No is Not Valid"),
-    Password: yup
-      .string()
-      .required("Password is Required"),
+    Password: yup.string().required("Password is Required"),
     ConfirmPass: yup
       .string()
       .required("Confirm Password is Required")
@@ -39,9 +37,9 @@ function UpdateForm(props) {
   const FirstName = FullName?.split(" ")[0];
   const LastName = FullName?.split(" ")[1];
 
-  const [updateState,setUpdateState] = useState(false);
-  const [err,setErr] = useState(false);
-  let msg = "Invalid Password"
+  const [updateState, setUpdateState] = useState(false);
+  const [err, setErr] = useState(false);
+  let msg = "Invalid Password";
 
   const dispatch = useDispatch();
 
@@ -52,20 +50,18 @@ function UpdateForm(props) {
   const handleSignup = (data) => {
     // var fullName = data.FirstName + " " + data.LastName;
     setErr(false);
-    if(data.Password === data.ConfirmPass){
+    if (data.Password === data.ConfirmPass) {
       setErr(true);
       return;
     }
-    dispatch(
-      userUpdate(data.Password, data.ConfirmPass)
-    );
+    dispatch(userUpdate(data.Password, data.ConfirmPass));
 
     setTimeout(() => {
       const updateStatus = localStorage.getItem("updateStatus");
-      console.log(updateStatus);
-      updateStatus === "true" ? historyTwo.push("/login") : setUpdateState(true);
-    },100);
-
+      updateStatus === "true"
+        ? historyTwo.push("/login")
+        : setUpdateState(true);
+    }, 100);
   };
   useEffect(() => {
     window.scrollTo(0, 0);
